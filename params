@@ -1,7 +1,7 @@
 
 # User params
-export username=thepicpixel
-export password=test
+export username=USER
+export password=PASSWORD
 
 # Device params
-export hostname=master01
+export hostname=HOST
