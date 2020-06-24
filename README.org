@@ -1,0 +1,23 @@
+
+* Basic Raspberry Pi Configuration
+
+** Step 1
+Fill the param file with your own variables.
+
+** Step 2
+Run the script configure.sh as root.
+
+** Step 3
+From your laptop, generate a SSH key and then use the following command :
+
+#+BEGIN_SRC bash
+ssh-copy-id <USER>@<IP-OF-YOUR-RASPBERRYPI>
+#+END_SRC
+
+** Step 4
+Authenticate to the Pi and delete the Pi user with the following commands :
+
+#+BEGIN_SRC bash
+sudo pkill pi
+sudo deluser pi
+#+END_SRC
