@@ -21,3 +21,9 @@ Authenticate to the Pi and delete the Pi user with the following commands :
 sudo pkill pi
 sudo deluser pi
 #+END_SRC
+
+** Step 5
+Modify the sshd_config file in order to prevent any user from using password authentication.
+
+** Step 6
+Restart the ssh service.

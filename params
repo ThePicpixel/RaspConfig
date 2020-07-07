@@ -4,4 +4,4 @@ export username=USER
 export password=PASSWORD
 
 # Device params
-export hostname=HOST
+export hostname=HOSTNAME
