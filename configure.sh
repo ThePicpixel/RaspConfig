@@ -1,8 +1,16 @@
 #!/bin/bash
 
+# Add podman repositories
+echo 'deb http://deb.debian.org/debian buster-backports main' >> /etc/apt/sources.list
+echo 'deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/Raspbian_10/ /' | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/Raspbian_10/Release.key | sudo apt-key add -
+
 # Upgrading the system
 sudo apt update
 sudo apt upgrade -y
+
+# Install podman
+sudo apt-get -qq -y install podman
 
 # Loading params
 source params
